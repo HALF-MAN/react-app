@@ -1,6 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 import { Fragment, useState } from 'react'
+import ComponentCommunication from './component/ComponentCommunication'
+import ChildrenSlot from './component/ChildrenSlot';
+import FatherGetChildrenData from './component/FatherGetChildrenData';
+import ContexTest from './component/ContextTest';
+import UseReducerTest from './component/UseReducerTest';
 
 function App() {
   const list = [
@@ -45,6 +50,12 @@ function App() {
         alt=''
         {...imgData}
       />
+      <ComponentCommunication></ComponentCommunication>
+      <ChildrenSlot></ChildrenSlot>
+      <FatherGetChildrenData></FatherGetChildrenData>
+
+      <ContexTest></ContexTest>
+      <UseReducerTest></UseReducerTest>
     </>
   )
 }
